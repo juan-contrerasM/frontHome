@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.homeview.OperadorController">
+    <children>
+        <TextField fx:id="txtBuscador" layoutX="341.0" layoutY="51.0" prefHeight="33.0" prefWidth="238.0" promptText="Buscador" />
+        <TableView fx:id="tableProveedor" layoutX="16.0" layoutY="122.0" prefHeight="200.0" prefWidth="563.0">
+            <columns>
+                <TableColumn fx:id="columCedula" prefWidth="92.0" text="cedula" />
+                <TableColumn fx:id="columNombre" prefWidth="128.0" text="Nombre" />
+                <TableColumn fx:id="columApellido" prefWidth="125.0" text="Apellido" />
+                <TableColumn fx:id="columFechaNacimiento" prefWidth="120.0" text="Fecha nacimiento" />
+            <TableColumn fx:id="columIndicadorAislamiento" prefWidth="97.0" text="Indicador " />
+            </columns>
+        </TableView>
+        <Text layoutX="89.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operador" wrappingWidth="180.03466796875">
+            <font>
+                <Font name="Times New Roman Bold" size="35.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="66.0" fitWidth="74.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/Transportador.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtnombre" layoutX="39.0" layoutY="348.0" prefHeight="33.0" prefWidth="157.0" promptText="Nombre" />
+        <TextField fx:id="txtApellido" layoutX="228.0" layoutY="348.0" prefHeight="33.0" prefWidth="157.0" promptText="Apellido" />
+        <TextField fx:id="txtcedula" layoutX="39.0" layoutY="401.0" prefHeight="33.0" prefWidth="157.0" promptText="Cedula" />
+        <TextField fx:id="txtFechaNacimiento" layoutX="246.0" layoutY="401.0" prefHeight="33.0" prefWidth="238.0" promptText="fecha nacimiento (2000-03-14)" />
+        <ImageView fx:id="imgeRecargar" fitHeight="33.0" fitWidth="35.0" layoutX="306.0" layoutY="51.0" onMouseClicked="#recargar" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/recargar.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgBucar" fitHeight="33.0" fitWidth="33.0" layoutX="546.0" layoutY="51.0" onMouseClicked="#buscar" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/lupa.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgCrear" fitHeight="53.0" fitWidth="66.0" layoutX="117.0" layoutY="471.0" onMouseClicked="#crear" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/crear.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgEliminar" fitHeight="53.0" fitWidth="56.0" layoutX="271.0" layoutY="471.0" onMouseClicked="#eliminar" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/eliminar.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgActualizar" fitHeight="53.0" fitWidth="56.0" layoutX="423.0" layoutY="471.0" onMouseClicked="#actualizar" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/actaulizar.png" />
+            </image>
+        </ImageView>
+      <TextField fx:id="txtIndicadorAislamiento" layoutX="415.0" layoutY="348.0" prefHeight="33.0" prefWidth="157.0" promptText="indicar aislamiento" />
+    </children>
+
+</AnchorPane>

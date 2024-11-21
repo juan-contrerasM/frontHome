@@ -8,6 +8,7 @@ module com.example.homeview {
     requires com.google.gson;
     requires java.desktop;
     requires static lombok;
+    requires com.fasterxml.jackson.annotation;
 
     opens com.example.homeview to javafx.fxml, com.google.gson;
     exports com.example.homeview;
