@@ -101,7 +101,7 @@ public class ControllerPyp {
     void actualizar(MouseEvent event) throws Exception {
         if(verificarCampos()){
             Pyp pyp = new Pyp();
-            pyp.setCedula(txtnombre.getText());
+            pyp.setCedula(txtcedula.getText());
             pyp.setNombre(txtnombre.getText());
             pyp.setCantida_recuperaciones(Integer.valueOf(txtcantRecuperaciones.getText()));
             pyp.setPypcol(txtPypCol.getText());
